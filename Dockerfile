@@ -42,4 +42,3 @@ RUN echo "export ROS_LOCALHOST_ONLY=1" >> ~/.bashrc
 
 # Default command
 CMD ["bash"]
-
