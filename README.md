@@ -1,4 +1,4 @@
-# 🗺️ TurtleBot3 Autonomous Mapping (ROS 2)
+# 🗺️ TurtleBot3 Autonomous Mapping (ROS2)
 
 This project implements an autonomous mapping system for TurtleBot3 using ROS 2, Gazebo simulation, and Cartographer SLAM.
 
