@@ -297,3 +297,83 @@ exit
 ros2 launch my_robot_controller mapping.launch.py
 git status
 exit
+ros2 run nav2_map_server map_saver_cli -f ~/ros2_ws/src/my_robot_controller/map/map
+ros2 run nav2_map_server map_saver_cli -f ~/ros2_ws/src/my_robot_controller/map/mapp
+ros2 run nav2_map_server map_saver_cli -f ~/ws/my_robot_controller/map/mapp
+ros2 run nav2_map_server map_saver_cli -f ~/ws/src/my_robot_controller/map/mapp
+ros2 run nav2_map_server map_saver_cli -f ~/ws/src/my_robot_controller/map/mappp
+ros2 launch my_robot_controller turtlebot3_world.launch.py 
+exit
+colcon build --symlink-install
+. build_ws.sh
+ros2 launch my_robot_controller turtlebot3_navigation.launch.py 
+colcon build --symlink-install
+ros2 launch my_robot_controller turtlebot3_navigation.launch.py 
+colcon build --symlink-install
+ros2 launch my_robot_controller turtlebot3_navigation.launch.py 
+. build_ws.sh
+ros2 launch my_robot_controller turtlebot3_navigation.launch.py 
+. build_ws.sh
+ros2 launch my_robot_controller turtlebot3_navigation.launch.py 
+. build_ws.sh
+ros2 launch my_robot_controller turtlebot3_navigation.launch.py 
+. build_ws.sh
+ros2 launch my_robot_controller turtlebot3_navigation.launch.py 
+. build_ws.sh
+ros2 launch my_robot_controller turtlebot3_navigation.launch.py 
+. build_ws.sh
+ros2 launch my_robot_controller turtlebot3_navigation.launch.py 
+. build_ws.sh
+ros2 launch my_robot_controller turtlebot3_navigation.launch.py 
+. build_ws.sh
+ros2 launch my_robot_controller turtlebot3_navigation.launch.py 
+. build_ws.sh
+ros2 launch my_robot_controller turtlebot3_navigation.launch.py 
+. build_ws.sh
+ros2 launch my_robot_controller turtlebot3_navigation.launch.py 
+. build_ws.sh
+ros2 launch my_robot_controller turtlebot3_navigation.launch.py 
+. build_ws.sh
+ros2 launch my_robot_controller turtlebot3_navigation.launch.py 
+. build_ws.sh
+ros2 launch my_robot_controller turtlebot3_navigation.launch.py 
+. build_ws.sh
+ros2 launch my_robot_controller turtlebot3_navigation.launch.py 
+. build_ws.sh
+ros2 launch my_robot_controller turtlebot3_navigation.launch.py 
+. build_ws.sh
+ros2 launch my_robot_controller turtlebot3_navigation.launch.py 
+. build_ws.sh
+ros2 launch my_robot_controller turtlebot3_navigation.launch.py 
+. build_ws.sh
+ros2 launch my_robot_controller turtlebot3_navigation.launch.py 
+exit
+ros2 launch my_robot_controller turtlebot3_navigation.launch.py 
+. build_ws.sh
+ros2 launch my_robot_controller turtlebot3_navigation.launch.py 
+. build_ws.sh
+ros2 launch my_robot_controller turtlebot3_navigation.launch.py 
+. build_ws.sh
+ros2 launch my_robot_controller turtlebot3_navigation.launch.py 
+. build_ws.sh
+ros2 launch my_robot_controller turtlebot3_navigation.launch.py 
+. build_ws.sh
+ros2 launch my_robot_controller turtlebot3_navigation.launch.py 
+. build_ws.sh
+ros2 launch my_robot_controller turtlebot3_navigation.launch.py 
+. build_ws.sh
+ros2 launch my_robot_controller turtlebot3_navigation.launch.py 
+exit
+ros2 launch my_robot_controller turtlebot3_navigation.launch.py 
+. build_ws.sh
+ros2 launch my_robot_controller turtlebot3_navigation.launch.py 
+. build_ws.sh
+ros2 launch my_robot_controller turtlebot3_navigation.launch.py 
+. build_ws.sh
+ros2 launch my_robot_controller turtlebot3_navigation.launch.py 
+. build_ws.sh
+ros2 launch my_robot_controller turtlebot3_navigation.launch.py 
+. build_ws.sh
+ros2 launch my_robot_controller turtlebot3_navigation.launch.py 
+. build_ws.sh
+ros2 launch my_robot_controller turtlebot3_navigation.launch.py 

@@ -17,7 +17,7 @@ def generate_launch_description():
     map_dir = os.path.join(
         get_package_share_directory('my_robot_controller'),
         'map',
-        'map.yaml'
+        'mappp.yaml'
     )
     gazebo_world = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
@@ -47,7 +47,7 @@ def generate_launch_description():
     ld = LaunchDescription()
     ld.add_action(navigation_node)
     ld.add_action(gazebo_world)
-    #ld.add_action(goal_pose_publisher)
+    ld.add_action(goal_pose_publisher)
 
 
     return ld
