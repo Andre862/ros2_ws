@@ -377,3 +377,4 @@ ros2 launch my_robot_controller turtlebot3_navigation.launch.py
 ros2 launch my_robot_controller turtlebot3_navigation.launch.py 
 . build_ws.sh
 ros2 launch my_robot_controller turtlebot3_navigation.launch.py 
+exit
