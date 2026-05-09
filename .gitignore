@@ -4,3 +4,7 @@ install/
 log/
 
 .bash_history
+
+# Core dumps
+core
+*.core

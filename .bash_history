@@ -378,3 +378,13 @@ ros2 launch my_robot_controller turtlebot3_navigation.launch.py
 . build_ws.sh
 ros2 launch my_robot_controller turtlebot3_navigation.launch.py 
 exit
+. build_ws.sh
+ros2 launch my_robot_controller av_nav.launch.py 
+ros2 launch my_robot_controller car_nav.launch.py 
+. build_ws.sh
+git status
+exit
+ros2 launch my_robot_controller car_nav
+ros2 launch my_robot_controller car_nav.launch.py 
+ros2 topic echo /planning/mission_planning/goal
+exit
