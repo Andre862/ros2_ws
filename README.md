@@ -1,3 +1,19 @@
+# 🗺️ Autoware Autonomous Mapping
+
+This project implements an autonomous mission planning for Autoware Ego with 4 goal points
+
+To set up mapping process we have to run $ ros2 launch my_robot_controller car_nav.launch.py
+
+Files that were added are:
+
+autoware_terminal.sh
+
+src/my_robot_controller/my_robot_controller/aw_navigation.py
+
+src/my_robot_controller/launch/car_nav.launch.py
+
+-------------------------------------------------------------
+
 # 🗺️ TurtleBot3 Autonomous Mapping (ROS2)
 
 This project implements an autonomous mapping system for TurtleBot3 using ROS 2, Gazebo simulation, and Cartographer SLAM.
