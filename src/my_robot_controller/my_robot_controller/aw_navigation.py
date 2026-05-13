@@ -47,7 +47,6 @@ class AWNavigationNode(Node):
 
         self.goal_poses.append({'x':3813.01, 'y':73809.95 , 'z':-0.50 , 'w':0.86 })
         self.goal_poses.append({'x':3775.07, 'y':73721.38 , 'z':0.85 , 'w':0.52 })
-        #self.goal_poses.append({'x':3631.50, 'y':73637.45 , 'z':0.73 , 'w':0.67 })
         self.goal_poses.append({'x':3711.43, 'y':73764.31 , 'z':-0.96 , 'w':0.26 })
         self.goal_poses.append({'x':3716.93, 'y':73754.17 , 'z':0.22 , 'w':0.97 })
         
