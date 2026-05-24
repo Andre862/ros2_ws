@@ -388,3 +388,12 @@ ros2 launch my_robot_controller car_nav
 ros2 launch my_robot_controller car_nav.launch.py 
 ros2 topic echo /planning/mission_planning/goal
 exit
+################
+
+
+ros2 launch scenario_test_runner scenario_test_runner.launch.py architecture_type:=awf/universe record:=false scenario:='/autoware_map/scenarios/scenario20262.yaml' sensor_model:=sample_sensor_kit vehicle_model:=sample_vehicle output_directory:='/autoware_map' global_real_time_factor:=5.0  use_sim_time:=true 
+ros2 launch scenario_test_runner scenario_test_runner.launch.py record:=false scenario:='/autoware_map/scenarios/scenario20262.yaml' sensor_model:=sample_sensor_kit vehicle_model:=sample_vehicle output_directory:='/autoware_map' launch_rviz:=true global_real_time_factor:=5.0 
+
+
+
+###
