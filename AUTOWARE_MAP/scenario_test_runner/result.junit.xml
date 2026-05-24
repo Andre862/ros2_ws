@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<testsuites name="/autoware_map/scenario_test_runner" failures="1" errors="0" tests="1">
+  <testsuite name="scenario_andree" failures="1" errors="0" tests="1">
+    <testcase name="scenario_andree_0">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+  </testsuite>
+</testsuites>
