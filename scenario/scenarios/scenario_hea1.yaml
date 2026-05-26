@@ -6,14 +6,13 @@ ScenarioModifiers:
     - { name: NPC1_S, start: 5, step: 3, stop: 17 }  #5
     - { name: NPC2_S, start: 3, step: 7, stop: 24 }  #4
 
-
 OpenSCENARIO:
   FileHeader:
     revMajor: 1
     revMinor: 1
-    date: '2026-05-24T08:57:02.389Z'
+    date: '2026-05-25T21:30:24.909Z'
     description: ''
-    author: 'andre piiri (last modified by: andre piiri)'
+    author: andre piiri
   ParameterDeclarations:
     ParameterDeclaration:
       - name: __ego_dimensions_length__
@@ -39,6 +38,7 @@ OpenSCENARIO:
   RoadNetwork:
     LogicFile:
       filepath: $(ros2 pkg prefix --share kashiwanoha_map)/map
+
     TrafficSignals:
       TrafficSignalController: []
   Entities:
@@ -83,7 +83,7 @@ OpenSCENARIO:
               Property:
                 - name: isEgo
                   value: 'true'
-      - name: Npc2
+      - name: Npc1
         Vehicle:
           name: ''
           vehicleCategory: car
@@ -121,7 +121,7 @@ OpenSCENARIO:
             name: ''
             Properties:
               Property: []
-      - name: Npc3
+      - name: Npc2
         Vehicle:
           name: ''
           vehicleCategory: car
@@ -169,13 +169,13 @@ OpenSCENARIO:
                   Position:
                     LanePosition:
                       roadId: ''
-                      laneId: '34564' #35036
+                      laneId: '35001'
                       s: EGO_S
-                      offset: -0.0862
+                      offset: -0.0697
                       Orientation:
                         type: relative
-                        h: -0.0098
-                        p: 0
+                        h: 0
+                        p: -0.0
                         r: 0
               - RoutingAction:
                   AcquirePositionAction:
@@ -183,8 +183,8 @@ OpenSCENARIO:
                       LanePosition:
                         roadId: ''
                         laneId: '34564'
-                        s: 24.4924
-                        offset: 0.0716
+                        s: 17.5841
+                        offset: 0.2914
                         Orientation:
                           type: relative
                           h: 0
@@ -193,50 +193,50 @@ OpenSCENARIO:
     Story:
       - name: ''
         Act:
-          - name: act_action1
+          - name: act_act1
             ManeuverGroup:
               - maximumExecutionCount: 1
-                name: act_action1
+                name: act_act1
                 Actors:
                   selectTriggeringEntities: false
                   EntityRef:
-                    - entityRef: Npc3
+                    - entityRef: Npc1
                 Maneuver:
                   - name: ''
                     Event:
                       - name: start_npc1
                         priority: parallel
                         Action:
-                          - name: spawnnpc1
+                          - name: ''
                             GlobalAction:
                               EntityAction:
-                                entityRef: Npc3
+                                entityRef: Npc1
                                 AddEntityAction:
                                   Position:
                                     LanePosition:
                                       roadId: ''
                                       laneId: '34408'
                                       s: NPC1_S
-                                      offset: -0.0778
+                                      offset: 0.1078
                                       Orientation:
                                         type: relative
-                                        h: -0.0098
-                                        p: 0
+                                        h: 0
+                                        p: -0.0
                                         r: 0
-                          - name: goal_npc1
+                          - name: ''
                             PrivateAction:
                               RoutingAction:
                                 AcquirePositionAction:
                                   Position:
                                     LanePosition:
                                       roadId: ''
-                                      laneId: '34408'
-                                      s: 4.5811
-                                      offset: -0.0778
+                                      laneId: '34621'
+                                      s: 8.0641
+                                      offset: 0.1467
                                       Orientation:
                                         type: relative
-                                        h: -0.0098
-                                        p: 0
+                                        h: 0.0586
+                                        p: -0.0
                                         r: 0
                         StartTrigger:
                           ConditionGroup:
@@ -254,9 +254,9 @@ OpenSCENARIO:
                                         Position:
                                           LanePosition:
                                             roadId: ''
-                                            laneId: '34564'
-                                            s: 24.4924
-                                            offset: 0.0716
+                                            laneId: '35051'
+                                            s: 1.3339
+                                            offset: 0.4102
                                             Orientation:
                                               type: relative
                                               h: 0
@@ -273,10 +273,10 @@ OpenSCENARIO:
                         SimulationTimeCondition:
                           value: 0
                           rule: greaterThan
-          - name: act_action2
+          - name: act_act2
             ManeuverGroup:
               - maximumExecutionCount: 1
-                name: act_action2
+                name: act_act2
                 Actors:
                   selectTriggeringEntities: false
                   EntityRef:
@@ -287,7 +287,7 @@ OpenSCENARIO:
                       - name: start_npc2
                         priority: parallel
                         Action:
-                          - name: spawn_npc2
+                          - name: ''
                             GlobalAction:
                               EntityAction:
                                 entityRef: Npc2
@@ -297,25 +297,25 @@ OpenSCENARIO:
                                       roadId: ''
                                       laneId: '34576'
                                       s: NPC2_S
-                                      offset: 0.2852
+                                      offset: -0.1129
                                       Orientation:
                                         type: relative
                                         h: 0
                                         p: -0.0
                                         r: 0
-                          - name: goal_npc2
+                          - name: ''
                             PrivateAction:
                               RoutingAction:
                                 AcquirePositionAction:
                                   Position:
                                     LanePosition:
                                       roadId: ''
-                                      laneId: '34750'
-                                      s: 8.1751
-                                      offset: 0.3248
+                                      laneId: '34564'
+                                      s: 23.94
+                                      offset: -0.1199
                                       Orientation:
                                         type: relative
-                                        h: 0.5503
+                                        h: 0.0062
                                         p: -0.0
                                         r: 0
                         StartTrigger:
@@ -324,25 +324,10 @@ OpenSCENARIO:
                                 - name: ''
                                   delay: 0
                                   conditionEdge: none
-                                  ByEntityCondition:
-                                    TriggeringEntities:
-                                      triggeringEntitiesRule: any
-                                      EntityRef:
-                                        - entityRef: ego
-                                    EntityCondition:
-                                      ReachPositionCondition:
-                                        Position:
-                                          LanePosition:
-                                            roadId: ''
-                                            laneId: '34976'
-                                            s: 35.8878
-                                            offset: -0.0958
-                                            Orientation:
-                                              type: relative
-                                              h: 0
-                                              p: -0.0
-                                              r: 0
-                                        tolerance: 1
+                                  ByValueCondition:
+                                    SimulationTimeCondition:
+                                      value: 8
+                                      rule: greaterThan
             StartTrigger:
               ConditionGroup:
                 - Condition:
@@ -395,8 +380,8 @@ OpenSCENARIO:
                                           LanePosition:
                                             roadId: ''
                                             laneId: '34564'
-                                            s: 24.4924
-                                            offset: 0.0716
+                                            s: 17.5841
+                                            offset: 0.2914
                                             Orientation:
                                               type: relative
                                               h: 0
@@ -444,7 +429,7 @@ OpenSCENARIO:
                                     EntityCondition:
                                       CollisionCondition:
                                         EntityRef:
-                                          entityRef: Npc2
+                                          entityRef: Npc1
                             - Condition:
                                 - name: ''
                                   delay: 0
@@ -457,7 +442,7 @@ OpenSCENARIO:
                                     EntityCondition:
                                       CollisionCondition:
                                         EntityRef:
-                                          entityRef: Npc3
+                                          entityRef: Npc2
                         Action:
                           - name: ''
                             UserDefinedAction:

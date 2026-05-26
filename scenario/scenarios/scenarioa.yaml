@@ -1,19 +1,18 @@
-ScenarioModifiers:
+ScenarioModifiers:   
   ScenarioModifier:     
     # Tests ego starting at 15m, 18m, 21m... up to 35m 
-    - { name: EGO_S, start: 10, step: 5, stop: 30 } #5
+    - { name: EGO_S, start: 10, step: 5, stop: 20 } 
     # Tests NPC triggers every 1 meter 
-    - { name: NPC1_S, start: 5, step: 3, stop: 17 }  #5
-    - { name: NPC2_S, start: 3, step: 7, stop: 24 }  #4
-
+    - { name: NPC1_S, start: 5, step: 3, stop: 11 }  
+    - { name: NPC2_S, start: 3, step: 10, stop: 23 }  
 
 OpenSCENARIO:
   FileHeader:
     revMajor: 1
     revMinor: 1
-    date: '2026-05-24T08:57:02.389Z'
+    date: '2026-05-25T20:07:55.280Z'
     description: ''
-    author: 'andre piiri (last modified by: andre piiri)'
+    author: andre piiri
   ParameterDeclarations:
     ParameterDeclaration:
       - name: __ego_dimensions_length__
@@ -39,6 +38,7 @@ OpenSCENARIO:
   RoadNetwork:
     LogicFile:
       filepath: $(ros2 pkg prefix --share kashiwanoha_map)/map
+
     TrafficSignals:
       TrafficSignalController: []
   Entities:
@@ -169,7 +169,7 @@ OpenSCENARIO:
                   Position:
                     LanePosition:
                       roadId: ''
-                      laneId: '34564' #35036
+                      laneId: '35036'
                       s: EGO_S
                       offset: -0.0862
                       Orientation:
@@ -185,6 +185,21 @@ OpenSCENARIO:
                         laneId: '34564'
                         s: 24.4924
                         offset: 0.0716
+                        Orientation:
+                          type: relative
+                          h: 0
+                          p: -0.0
+                          r: 0
+          - entityRef: Npc2
+            PrivateAction:
+              - RoutingAction:
+                  AcquirePositionAction:
+                    Position:
+                      LanePosition:
+                        roadId: ''
+                        laneId: '34468'
+                        s: 0.2872
+                        offset: -0.3015
                         Orientation:
                           type: relative
                           h: 0
